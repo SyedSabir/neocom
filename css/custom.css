@@ -1,0 +1,54 @@
+body{
+    background: white;
+}
+.backgroundcovcer{
+    margin-top: 100px;
+    background: url("../img/socialmedia.jpg") center center fixed;
+    width: 100%;
+    background-size: cover;
+}
+.sectionService{
+    margin-bottom: 80px;
+}
+.CoverDisc{
+    padding-top: 200px;
+    padding-bottom: 100px;
+   color: black;
+}
+.serviceList{
+    float: left;
+}
+.detail{
+    font-size: 16px;
+    margin-left: 70px;
+    overflow: hidden;
+}
+.detail h2{
+    font-size: 26px;
+
+}
+
+.containerHelp{
+    margin-top: 100px;
+
+    background: url("../img/pattern.png") repeat 0 0 #222;
+}
+.contentContainer{
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.aboutus{
+    background: url("../img/market.jpg") fixed;
+    background-size: cover;
+}
+.aboutCantaint{
+    color: white;
+    padding:50px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 50px;
+    margin-bottom: 150px;
+    margin-top: 150px;;
+}
