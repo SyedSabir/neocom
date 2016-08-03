@@ -1,11 +1,15 @@
-body{
-    background: white;
-}
+
 .backgroundcovcer{
     margin-top: 100px;
     background: url("../img/socialmedia.jpg") center center fixed;
     width: 100%;
     background-size: cover;
+}
+.mainContainer{
+    color: white;
+    background: rgba(0,0,0,0.6);
+    padding: 20px;
+    border-radius: 20px;
 }
 .sectionService{
     margin-bottom: 80px;
@@ -41,6 +45,7 @@ body{
 }
 
 .aboutus{
+    padding-top: 100px;
     background: url("../img/market.jpg") fixed;
     background-size: cover;
 }
@@ -50,5 +55,49 @@ body{
     background: rgba(0, 0, 0, 0.6);
     border-radius: 50px;
     margin-bottom: 150px;
-    margin-top: 150px;;
+   }
+
+.contactSec{
+    padding-top: 50px;
+    background: url("../img/stardust.png")   repeat;
+    padding-bottom: 50px;
+}
+.contactList{
+        color: white;
+     float: left;
+ }
+.detailContact{
+    color: white;
+    font-size: 16px;
+    margin-left: 70px;
+    overflow: hidden;
+}
+.contHead{
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.socialButton-fb{
+    background: transparent;
+}
+.socialButton-tw{
+    background: transparent;
+}
+.socialButton-gp{
+    background: transparent;
+}
+.socialButton-in{
+    background: transparent;
+}
+.socialButton-fb:hover{
+    background: #337ab7;
+}
+.socialButton-tw:hover{
+    background: #71DAF7;
+}
+.socialButton-gp:hover{
+    background: #D34836;
+}
+.socialButton-in:hover{
+    background:#1A7FB3
 }
