@@ -101,3 +101,9 @@
 .socialButton-in:hover{
     background:#1A7FB3
 }
+.footer{
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
