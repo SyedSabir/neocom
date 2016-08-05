@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/custom.css">
     <script src="https://use.fontawesome.com/b164a5b733.js"></script>
     <link href="css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
 </head>
 <body>
 <div class="container">
@@ -20,13 +21,13 @@
             <a class="navbar-brand" href="#"  ><b><span style="color: black">NEO</span><span style="color: orangered">COM</span></b></a>
             <ul class="nav navbar-nav pull-xs-right">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">services</a>
+                    <a class="nav-link " href="#">services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About us</a>
+                    <a class="nav-link " href="#">About us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">contact</a>
+                    <a class="nav-link " href="#">contact</a>
                 </li>
             </ul>
 
@@ -59,7 +60,7 @@
 
 </div>
 
-<div class="serviceContainer animated fadeInUp">
+<div class="serviceContainer">
 
             <div class="container">
 
@@ -71,15 +72,15 @@
 
                 <div class="row">
 
-                    <div class="col-sm-4">
+                    <div class="col-sm-4"  >
 
-                        <div class="serviceList">
-                        <i class="fa fa-television fa-3x" aria-hidden="true"></i>
+                        <div class="serviceList" >
+                        <i class="fa fa-television fa-2x" aria-hidden="true"></i>
 
                       </div>
 
-                        <div class="detail">
-                            
+                        <div class="detail" data-anijs="if: scroll, on: window, do: fadeInRight animated, before: $scrollReveal ">
+
                             <h2>Digital Media Marketing</h2>
                             <p>
                                 NEOCOM is an interactive digital marketing agency having aim to serve its clients with complete online business solution.
@@ -87,21 +88,21 @@
                         </div>
 
                         <div class="serviceList">
-                            <i class="fa fa-bar-chart fa-3x" aria-hidden="true"></i>
+                            <i class="fa fa-bar-chart fa-2x" aria-hidden="true"></i>
                         </div>
 
-                        <div class="detail">
-                            <h2 class="fadeInUp animated shake">Marketing & Advertising</h2>
+                        <div class="detail" data-anijs="if: scroll, on: window, do: fadeInRight animated, before: $scrollReveal ">
+                            <h2 >Marketing & Advertising</h2>
                             <p>
                               NEOCOM  advertising and digital marketing agency that specializes in Challenger Brand Marketing. Our strategic marketing team of seasoned branding professionals is smart, flexible and tenacious.
                             </p>
                         </div>
 
                         <div class="serviceList">
-                            <i class="fa fa-map-signs fa-3x" aria-hidden="true"></i>
+                            <i class="fa fa-map-signs fa-2x" aria-hidden="true"></i>
                         </div>
 
-                        <div class="detail">
+                        <div class="detail" data-anijs="if: scroll, on: window, do: fadeInRight animated, before: $scrollReveal ">
                             <h2>Signage</h2>
                             <p>
                                 A digital signage network is more than a combination of integrated software and hardware products designed to deliver targeted content.
@@ -110,7 +111,7 @@
 
                     </div>
 
-                    <div class="col-sm-8">
+                    <div class="col-sm-8 ">
                         <img src="img/img.png" style="max-width: 100%">
                     </div>
 
@@ -122,7 +123,7 @@
             <div class="belowService">
 
 
-                <div class="containerHelp">
+                <div class="containerHelp" data-anijs="if: scroll, on: window, do: fadeIn animated, before:scrollReveal ">
                         <div class="contentContainer">
 
                             <h2>How can we help your business?</h2>
@@ -141,7 +142,7 @@
                     <div class="row">
                         <div class="col-sm-6">
 
-                    <div class="aboutCantaint">
+                    <div class="aboutCantaint" data-anijs="if: scroll, on: window, do: fadeIn animated, before:scrollReveal ">
                     <h2 >about us</h2>
 
       <p>
@@ -177,7 +178,7 @@
                                 <i class="fa fa-phone fa-1x" aria-hidden="true" style="color: white">&nbsp;&nbsp;</i>
 
                             </div>
-                            <div class="detailContact">
+                            <div class="detailContact"  data-anijs="if: scroll, on: window, do: fadeIn animated, before:scrollReveal ">
                                 <p>03212437181</p>
                             </div>
 
@@ -186,7 +187,7 @@
                                 <i class="fa fa-envelope fa-1x" style="color: white" aria-hidden="true">&nbsp;&nbsp;</i>
 
                             </div>
-                            <div class="detailContact">
+                            <div class="detailContact"  data-anijs="if: scroll, on: window, do: fadeIn animated, before:scrollReveal ">
                                 <p style="color: white">farrukh.neocom@gmail.com</p>
                             </div>
 
@@ -195,7 +196,7 @@
                                 <i style="color: white" class="fa fa-map-marker fa-1x" aria-hidden="true">&nbsp;&nbsp;</i>
 
                             </div>
-                            <div class="detailContact">
+                            <div class="detailContact" data-anijs="if: scroll, on: window, do: fadeIn animated, before:scrollReveal ">
                                 <p style="color: white">NEOCOM <br>
                                     201, Building No. 12-C,<br>
                                     4th Commercial Lane,<br>
@@ -243,13 +244,37 @@
                 </div>
 
             </div>
+                   </div>
+<div id="map"></div>
 
-        </div>
-        <div class="footer">
+<div class="footer">
             <p>copyright &copy; 2016 <span>|&nbsp;</span><span style="color: black"><b>NEO</b></span><span style="color:orangered;"><b>COM</b></span>
             </p>
         </div>
+<script>
+    function initMap() {
+        var mapDiv = document.getElementById('map');
+        var map = new google.maps.Map(mapDiv, {
+            center: {lat: 24.79638, lng: 67.05085},
+            zoom: 17
+        });
+
+        var marker = new google.maps.Marker({
+            position:{lat: 24.79638, lng: 67.05085},
+            title: 'NEOCOM',
+            map: map
+        });
+    }
+</script>
+
+<script src="js/anijs-min.js"></script>
+<script src="js/anijs-helper-scrollreveal.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=
+AIzaSyD_1_jD1o8ypqHvVvHlrCALUE2BRKKwxQY&callback=initMap"
+        async defer>
+</script>
+
 </body>
 </html>
